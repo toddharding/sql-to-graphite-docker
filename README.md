@@ -5,10 +5,10 @@ Based on [sql-to-graphite](https://github.com/sashman/sql-to-graphite).
 ## Using with mssql
 
 1. Edit `odbc.ini` to contain the name and the address of your Server
-2. The queries directory needs ot be linked by a volume
+2. The queries directory needs to be linked by a volume
   - The format of the fields (in the `SELECT` statement) in the query must be:
 
-    | Metric Key | Valuie | Unix Timestamp
+    | Metric Key | Value  | Unix Timestamp
     |-------------|-------|-
     | example.test | 123 | 1495670400
   - The queries have to be in the file called `queries.sql`
